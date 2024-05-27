@@ -1,0 +1,67 @@
+# HELP gha_controller_pending_ephemeral_runners Number of ephemeral runners in a pending state.
+# TYPE gha_controller_pending_ephemeral_runners gauge
+gha_controller_pending_ephemeral_runners 12
+
+# HELP gha_controller_running_ephemeral_runners Number of ephemeral runners in a running state.
+# TYPE gha_controller_running_ephemeral_runners gauge
+gha_controller_running_ephemeral_runners 42
+
+# HELP gha_controller_failed_ephemeral_runners 	Number of ephemeral runners in a failed state.
+# TYPE gha_controller_failed_ephemeral_runners gauge
+gha_controller_failed_ephemeral_runners 1
+
+# HELP gha_controller_running_listeners Number of listeners in a running state.
+# TYPE gha_controller_running_listeners gauge
+gha_controller_running_listeners 2
+
+# TYPE gha_assigned_jobs gauge
+gha_assigned_jobs 1
+
+# TYPE gha_running_jobs gauge
+gha_running_jobs 2
+
+# TYPE gha_registered_runners gauge
+gha_registered_runners 10
+
+# TYPE gha_busy_runners gauge
+gha_busy_runners 1
+
+# TYPE gha_min_runners gauge
+gha_min_runners 2
+
+# TYPE gha_max_runners gauge
+gha_max_runners 50
+
+# TYPE gha_desired_runners gauge
+gha_desired_runners 5
+
+# TYPE gha_idle_runners gauge
+gha_idle_runners 1
+
+# TYPE gha_started_jobs_total counter
+gha_started_jobs_total 156
+
+# TYPE gha_completed_jobs_total counter
+gha_completed_jobs_total 13423
+
+# TYPE gha_job_startup_duration_seconds histogram
+gha_job_startup_duration_seconds{le="0.5", job="lint"} 1
+gha_job_startup_duration_seconds{le="1", job="lint"} 2
+gha_job_startup_duration_seconds{le="5", job="lint"} 3
+gha_job_startup_duration_seconds{le="10", job="lint"} 56
+gha_job_startup_duration_seconds{le="15", job="lint"} 75
+gha_job_startup_duration_seconds{le="30", job="lint"} 25
+gha_job_startup_duration_seconds{le="60", job="lint"} 10
+gha_job_startup_duration_seconds_sum 5342
+gha_job_startup_duration_seconds_count 144320
+
+# TYPE gha_job_execution_duration_seconds histogram
+gha_job_execution_duration_seconds{le="1", job="lint"} 1
+gha_job_execution_duration_seconds{le="5", job="lint"} 2
+gha_job_execution_duration_seconds{le="30", job="lint"} 3
+gha_job_execution_duration_seconds{le="60", job="lint"} 56
+gha_job_execution_duration_seconds{le="300", job="lint"} 75
+gha_job_execution_duration_seconds{le="600", job="lint"} 25
+gha_job_execution_duration_seconds{le="900", job="lint"} 10
+gha_job_execution_duration_seconds_sum 5342
+gha_job_execution_duration_seconds_count 144320
